@@ -399,7 +399,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'project-1': {
                 title: 'Melhoria de Vias Urbanas',
                 category: 'Infraestrutura',
-                image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+                image: 'assets/images/gallery/evento01.jpg',
                 date: 'Janeiro 2023 - Em andamento',
                 location: 'Centro e Bairros',
                 status: 'Em execução - 65% concluído',
@@ -412,16 +412,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 results: 'Até o momento, foram concluídos 9,8 km de pavimentação, beneficiando diretamente mais de 20 mil moradores. A nova sinalização já foi implementada em 80% das vias concluídas, e os sistemas de drenagem foram melhorados em 5 pontos críticos da cidade, reduzindo significativamente os alagamentos durante o período chuvoso.',
                 gallery: [
-                    'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-                    'https://images.unsplash.com/photo-1464519046765-f6d70654fac3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-                    'https://images.unsplash.com/photo-1515162305285-0293e4767cc2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-                    'https://images.unsplash.com/photo-1536145232043-e1d812eed6fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+                    'assets/images/gallery/evento01.jpg',
+                    'assets/images/gallery/evento02.jpg',
+                    'assets/images/gallery/evento03.jpg',
+                    'assets/images/gallery/evento04.jpg'
                 ]
             },
             'project-2': {
                 title: 'Revitalização de Praças',
                 category: 'Infraestrutura',
-                image: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+                image: 'assets/images/gallery/evento02.jpg',
                 date: 'Março 2023 - Em andamento',
                 location: 'Diversos Bairros',
                 status: 'Em execução - 40% concluído',
@@ -434,16 +434,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 results: 'Já foram concluídas as reformas de 3 praças nos bairros Centro, São Miguel e Prado. Os novos espaços já contam com iluminação de LED, equipamentos de ginástica, bancos renovados e paisagismo. A população já está utilizando ativamente estes espaços, especialmente nos fins de semana.',
                 gallery: [
-                    'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-                    'https://images.unsplash.com/photo-1519331379826-f10be5486c6f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-                    'https://images.unsplash.com/photo-1500754088824-ce0582cfe45f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-                    'https://images.unsplash.com/photo-1493246318656-5bfd4cfb29b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+                    'assets/images/gallery/evento02.jpg',
+                    'assets/images/gallery/evento03.jpg',
+                    'assets/images/gallery/evento04.jpg',
+                    'assets/images/gallery/evento05.JPG'
                 ]
             },
             'project-3': {
                 title: 'Biblioteca Comunitária',
                 category: 'Educação',
-                image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+                image: 'assets/images/gallery/evento03.jpg',
                 date: 'Abril 2023 - Em andamento',
                 location: 'Bairros Periféricos',
                 status: 'Em execução - 75% concluído',
@@ -456,16 +456,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 results: 'Foram inauguradas 3 bibliotecas nos bairros Novo Horizonte, Jardim Primavera e Santa Mônica. Juntas, elas já receberam mais de 3.500 visitantes e realizaram 1.200 empréstimos de livros. Os computadores são utilizados diariamente por estudantes para pesquisas escolares e por adultos para cursos online e busca de empregos.',
                 gallery: [
-                    'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-                    'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-                    'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-                    'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+                    'assets/images/gallery/evento03.jpg',
+                    'assets/images/gallery/evento04.jpg',
+                    'assets/images/gallery/evento05.JPG',
+                    'assets/images/gallery/evento06.JPG'
                 ]
             },
             'project-4': {
                 title: 'Cursos Profissionalizantes',
                 category: 'Educação',
-                image: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+                image: 'assets/images/gallery/evento04.jpg',
                 date: 'Fevereiro 2023 - Em andamento',
                 location: 'Centro de Capacitação',
                 status: 'Em execução - 85% concluído',
@@ -478,10 +478,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 ],
                 results: 'Já foram realizados 10 cursos diferentes, formando 320 pessoas. Destas, 145 já conseguiram colocação no mercado de trabalho. Os cursos de gastronomia e informática tiveram os maiores índices de empregabilidade, com mais de 70% dos alunos empregados após a conclusão.',
                 gallery: [
-                    'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-                    'https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-                    'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-                    'https://images.unsplash.com/photo-1516534775068-ba3e7458af70?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+                    'assets/images/gallery/evento04.jpg',
+                    'assets/images/gallery/evento05.JPG',
+                    'assets/images/gallery/evento06.JPG',
+                    'assets/images/gallery/evento01.jpg'
                 ]
             }
         };
