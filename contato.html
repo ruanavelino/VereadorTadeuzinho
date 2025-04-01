@@ -2,7 +2,8 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Contato - Vereador Tadeuzinho - Gravatá</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -41,102 +42,40 @@
         </div>
     </header>
 
-    <!-- Contact Hero Section -->
-    <section class="contact-hero fade-in">
-        <div class="overlay"></div>
+    <!-- Contact Page Hero -->
+    <section class="contact-page-hero fade-in">
         <div class="container">
-            <div class="contact-hero-content">
-                <h1>Entre em Contato</h1>
-                <h3>Estou sempre à disposição para ouvir você</h3>
-            </div>
+            <h1>Entre em Contato</h1>
+            <p>Estou sempre à disposição para ouvir suas ideias, sugestões e necessidades. Vamos trabalhar juntos para melhorar nossa cidade.</p>
         </div>
     </section>
 
-    <!-- Contact Main Section -->
-    <section class="contact-main fade-in">
+    <!-- Contact Page Main -->
+    <section class="contact-page fade-in">
         <div class="container">
-            <div class="contact-grid">
-                <!-- Informações de Contato -->
-                <div class="contact-info fade-in">
-                    <h2>Fale com o Vereador</h2>
-                    <p class="contact-intro">Estou à disposição para ouvir suas sugestões, críticas ou ideias para melhorar nossa cidade. Envie uma mensagem ou entre em contato através dos canais abaixo:</p>
-                    
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-detail">
-                                <h4>Gabinete</h4>
-                                <p>Câmara Municipal de Gravatá<br>Av. Principal, 123 - Centro<br>Gravatá - PE, 55640-000</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-method">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-detail">
-                                <h4>Telefone</h4>
-                                <p>(81) 3533-XXXX (Gabinete)<br>(81) 99999-9999 (WhatsApp)</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-method">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-detail">
-                                <h4>E-mail</h4>
-                                <p>contato@tadeuzinho.com.br<br>gabinete@tadeuzinho.com.br</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-method">
-                            <div class="contact-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div class="contact-detail">
-                                <h4>Horário de Atendimento</h4>
-                                <p>Segunda a Sexta: 8h às 17h<br>Sábado: 9h às 12h (com agendamento)</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="social-media-contact">
-                        <h4>Redes Sociais</h4>
-                        <div class="social-icons">
-                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
+            <div class="contact-container">
                 <!-- Formulário de Contato -->
-                <div class="contact-form-container fade-in">
-                    <h2>Envie sua Mensagem</h2>
-                    <form id="contactForm" class="contact-form">
+                <div class="contact-form fade-in">
+                    <h3>Envie sua Mensagem</h3>
+                    <form id="contactForm">
                         <div class="form-group">
                             <label for="name">Nome Completo</label>
-                            <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Seu nome completo" required>
                         </div>
                         
                         <div class="form-group">
                             <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="seu@email.com" required>
                         </div>
                         
                         <div class="form-group">
                             <label for="phone">Telefone</label>
-                            <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000">
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="(00) 00000-0000">
                         </div>
                         
                         <div class="form-group">
                             <label for="subject">Assunto</label>
-                            <select id="subject" name="subject" required>
+                            <select id="subject" name="subject" class="form-control" required>
                                 <option value="" disabled selected>Selecione o assunto</option>
                                 <option value="sugestao">Sugestão</option>
                                 <option value="denuncia">Denúncia</option>
@@ -148,12 +87,12 @@
                         
                         <div class="form-group">
                             <label for="message">Mensagem</label>
-                            <textarea id="message" name="message" rows="6" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                            <textarea id="message" name="message" class="form-control" placeholder="Escreva sua mensagem aqui..." required></textarea>
                         </div>
                         
                         <div class="form-group">
                             <label for="neighborhood">Bairro onde mora</label>
-                            <input type="text" id="neighborhood" name="neighborhood" placeholder="Seu bairro">
+                            <input type="text" id="neighborhood" name="neighborhood" class="form-control" placeholder="Seu bairro">
                         </div>
                         
                         <div class="form-check">
@@ -161,36 +100,87 @@
                             <label for="newsletter">Desejo receber atualizações sobre projetos e ações</label>
                         </div>
                         
-                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                        <button type="submit" class="submit-btn">Enviar Mensagem</button>
                     </form>
                 </div>
+                
+                <!-- Informações de Contato -->
+                <div class="contact-info fade-in">
+                    <h3>Fale com o Vereador</h3>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-item-content">
+                                <h4>Gabinete</h4>
+                                <p>Câmara Municipal de Gravatá<br>Av. Principal, 123 - Centro<br>Gravatá - PE, 55640-000</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div class="contact-item-content">
+                                <h4>Telefone</h4>
+                                <p>(81) 3533-XXXX (Gabinete)<br>(81) 99999-9999 (WhatsApp)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-item-content">
+                                <h4>E-mail</h4>
+                                <p>contato@tadeuzinho.com.br<br>gabinete@tadeuzinho.com.br</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="contact-item-content">
+                                <h4>Horário de Atendimento</h4>
+                                <p>Segunda a Sexta: 8h às 17h<br>Sábado: 9h às 12h (com agendamento)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h4>Redes Sociais</h4>
+                    <div class="social-contact">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Mapa Section -->
-    <section class="map-section fade-in">
-        <div class="container">
-            <h2 class="section-title">Onde Estamos</h2>
+            
+            <!-- Mapa -->
             <div class="map-container fade-in">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.1033437746074!2d-35.56833148521004!3d-8.673967993758288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a9980591e88d75%3A0x1142e4670ac38f8!2zQ8OibWFyYSBNdW5pY2lwYWwgZGUgR3JhdmF0w6E!5e0!3m2!1spt-BR!2sbr!4v1626786462658!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.1033437746074!2d-35.56833148521004!3d-8.673967993758288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a9980591e88d75%3A0x1142e4670ac38f8!2zQ8OibWFyYSBNdW5pY2lwYWwgZGUgR3JhdmF0w6E!5e0!3m2!1spt-BR!2sbr!4v1626786462658!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
-
-    <!-- Newsletter Section -->
-    <section class="newsletter-section fade-in">
+    
+    <!-- Horário de Atendimento -->
+    <section class="office-hours fade-in">
         <div class="container">
-            <div class="newsletter-container fade-in">
-                <div class="newsletter-content">
-                    <h2>Fique por dentro das novidades</h2>
-                    <p>Receba atualizações sobre projetos, eventos e ações do mandato diretamente no seu e-mail.</p>
+            <h3>Horários de Atendimento</h3>
+            <div class="hours-container">
+                <div class="hours-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h4>Gabinete</h4>
+                    <p>Segunda a Sexta<br>8h às 17h</p>
                 </div>
-                <div class="newsletter-form">
-                    <form id="newsletterForm">
-                        <input type="email" placeholder="Seu e-mail" required>
-                        <button type="submit">Inscrever-se</button>
-                    </form>
+                
+                <div class="hours-item">
+                    <i class="fas fa-users"></i>
+                    <h4>Atendimento Comunitário</h4>
+                    <p>Quartas e Quintas<br>14h às 18h</p>
+                </div>
+                
+                <div class="hours-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <h4>Agendamento Especial</h4>
+                    <p>Sábados<br>9h às 12h</p>
                 </div>
             </div>
         </div>
@@ -273,41 +263,44 @@
 
     <script src="script.js"></script>
     <script>
-        // FAQ Toggle
         document.addEventListener('DOMContentLoaded', function() {
-            const faqItems = document.querySelectorAll('.faq-question');
+            // Ajuste para nav mobile
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const headerCenter = document.querySelector('.header-center');
             
-            faqItems.forEach(item => {
-                item.addEventListener('click', function() {
-                    const parent = this.parentElement;
-                    const answer = this.nextElementSibling;
-                    
-                    // Toggle active class
-                    parent.classList.toggle('active');
-                    
-                    // Toggle display of answer
-                    if (parent.classList.contains('active')) {
-                        answer.style.maxHeight = answer.scrollHeight + 'px';
-                        this.querySelector('i').classList.replace('fa-chevron-down', 'fa-chevron-up');
-                    } else {
-                        answer.style.maxHeight = '0';
-                        this.querySelector('i').classList.replace('fa-chevron-up', 'fa-chevron-down');
+            if(mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    headerCenter.classList.toggle('active');
+                    document.body.classList.toggle('menu-open');
+                });
+            }
+            
+            // Fechar menu ao clicar em um link do menu mobile
+            document.querySelectorAll('.header-center nav a').forEach(link => {
+                link.addEventListener('click', function() {
+                    if(window.innerWidth <= 992) {
+                        headerCenter.classList.remove('active');
+                        document.body.classList.remove('menu-open');
                     }
                 });
             });
             
-            // Form Submission
-            document.getElementById('contactForm').addEventListener('submit', function(event) {
-                event.preventDefault();
-                alert('Obrigado por sua mensagem! Entraremos em contato em breve.');
-                this.reset();
-            });
-            
-            // Newsletter Subscription
-            document.getElementById('newsletterForm').addEventListener('submit', function(event) {
-                event.preventDefault();
-                alert('Obrigado por se inscrever em nossa newsletter!');
-                this.reset();
+            // Toggle para FAQ
+            document.querySelectorAll('.faq-question').forEach(question => {
+                question.addEventListener('click', () => {
+                    const faqItem = question.parentElement;
+                    const isActive = faqItem.classList.contains('active');
+                    
+                    // Fecha todas as respostas abertas
+                    document.querySelectorAll('.faq-item').forEach(item => {
+                        item.classList.remove('active');
+                    });
+                    
+                    // Abre apenas a resposta clicada, se não estava aberta antes
+                    if (!isActive) {
+                        faqItem.classList.add('active');
+                    }
+                });
             });
         });
     </script>
