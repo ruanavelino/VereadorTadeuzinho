@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - Vereador Tadeuzinho - Gravatá</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.JPG" alt="Logo Tadeuzinho">
+                </a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="header-center">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">INÍCIO</a></li>
+                        <li><a href="index.html#sobre">SOBRE</a></li>
+                        <li><a href="projetos.html" class="active">PROJETOS</a></li>
+                        <li><a href="index.html#galeria">GALERIA</a></li>
+                        <li><a href="index.html#contato">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Projects Hero Section -->
+    <section class="project-hero">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Nossos <span>Projetos</span></h1>
+                <p>Conheça as iniciativas que estão transformando Gravatá</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Categories -->
+    <section class="project-categories">
+        <div class="container">
+            <div class="categories-nav">
+                <button class="category-btn active" data-category="all">Todos</button>
+                <button class="category-btn" data-category="infraestrutura">Infraestrutura</button>
+                <button class="category-btn" data-category="educacao">Educação</button>
+                <button class="category-btn" data-category="saude">Saúde</button>
+                <button class="category-btn" data-category="sustentabilidade">Sustentabilidade</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects List -->
+    <section class="projects-list">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- Infraestrutura Projects -->
+                <div class="project-card fade-in" data-category="infraestrutura">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Melhoria de Vias">
+                    </div>
+                    <div class="project-content">
+                        <h3>Melhoria de Vias Urbanas</h3>
+                        <p>Projeto de pavimentação e recuperação das principais vias do município, melhorando a mobilidade urbana.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar"></i> Iniciado: Janeiro 2023</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Centro e Bairros</span>
+                        </div>
+                        <a href="#" class="btn btn-outline">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" data-category="infraestrutura">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Revitalização da Praça">
+                    </div>
+                    <div class="project-content">
+                        <h3>Revitalização de Praças</h3>
+                        <p>Projeto de revitalização das principais praças da cidade, com foco em áreas de lazer e convivência.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar"></i> Iniciado: Março 2023</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Diversos Bairros</span>
+                        </div>
+                        <a href="#" class="btn btn-outline">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <!-- Educação Projects -->
+                <div class="project-card fade-in" data-category="educacao">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Biblioteca Comunitária">
+                    </div>
+                    <div class="project-content">
+                        <h3>Biblioteca Comunitária</h3>
+                        <p>Criação de bibliotecas comunitárias em bairros periféricos para incentivo à leitura e cultura.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar"></i> Iniciado: Abril 2023</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Bairros Periféricos</span>
+                        </div>
+                        <a href="#" class="btn btn-outline">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" data-category="educacao">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cursos Profissionalizantes">
+                    </div>
+                    <div class="project-content">
+                        <h3>Cursos Profissionalizantes</h3>
+                        <p>Oferta de cursos profissionalizantes gratuitos para jovens e adultos em parceria com instituições de ensino.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar"></i> Iniciado: Fevereiro 2023</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Centro de Capacitação</span>
+                        </div>
+                        <a href="#" class="btn btn-outline">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <!-- Saúde Projects -->
+                <div class="project-card fade-in" data-category="saude">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Campanha de Saúde">
+                    </div>
+                    <div class="project-content">
+                        <h3>Campanhas de Saúde Preventiva</h3>
+                        <p>Campanhas periódicas de prevenção e conscientização sobre saúde em diversos bairros da cidade.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar"></i> Iniciado: Janeiro 2023</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Toda a cidade</span>
+                        </div>
+                        <a href="#" class="btn btn-outline">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" data-category="saude">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Postos de Saúde">
+                    </div>
+                    <div class="project-content">
+                        <h3>Modernização dos Postos de Saúde</h3>
+                        <p>Projeto de reforma e modernização dos postos de saúde municipais, melhorando o atendimento à população.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar"></i> Iniciado: Maio 2023</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Diversos Bairros</span>
+                        </div>
+                        <a href="#" class="btn btn-outline">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <!-- Sustentabilidade Projects -->
+                <div class="project-card fade-in" data-category="sustentabilidade">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Coleta Seletiva">
+                    </div>
+                    <div class="project-content">
+                        <h3>Programa de Coleta Seletiva</h3>
+                        <p>Implementação da coleta seletiva de resíduos em todos os bairros, com educação ambiental para a população.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar"></i> Iniciado: Março 2023</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Toda a cidade</span>
+                        </div>
+                        <a href="#" class="btn btn-outline">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" data-category="sustentabilidade">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1548247863-0c62e93e0693?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Energia Solar">
+                    </div>
+                    <div class="project-content">
+                        <h3>Energia Solar em Prédios Públicos</h3>
+                        <p>Instalação de painéis solares em prédios públicos, reduzindo custos e promovendo sustentabilidade.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar"></i> Iniciado: Junho 2023</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Prédios Municipais</span>
+                        </div>
+                        <a href="#" class="btn btn-outline">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="project-cta">
+        <div class="container">
+            <div class="cta-content fade-in">
+                <h2>Tem uma ideia para melhorar Gravatá?</h2>
+                <p>Compartilhe suas ideias e sugestões para projetos que possam beneficiar nossa cidade.</p>
+                <a href="#" class="btn btn-primary">Enviar Proposta</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.JPG" alt="Logo Tadeuzinho">
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html#sobre">Sobre</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="index.html#galeria">Galeria</a></li>
+                        <li><a href="index.html#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Vereador Tadeuzinho. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Gallery -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="modal-nav">
+            <button id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+            <button id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Project Details Modal -->
+    <div id="projectModal" class="modal project-modal">
+        <div class="project-modal-container">
+            <span class="close">&times;</span>
+            <div class="project-modal-content">
+                <div class="project-modal-header">
+                    <h2 id="projectTitle">Título do Projeto</h2>
+                    <span id="projectCategory" class="project-category-badge">Categoria</span>
+                </div>
+                <div class="project-modal-body">
+                    <div class="project-modal-image">
+                        <img id="projectImage" src="" alt="Imagem do Projeto">
+                    </div>
+                    <div class="project-modal-info">
+                        <div class="project-modal-meta">
+                            <span><i class="fas fa-calendar"></i> <span id="projectDate">Data</span></span>
+                            <span><i class="fas fa-map-marker-alt"></i> <span id="projectLocation">Local</span></span>
+                            <span><i class="fas fa-clock"></i> <span id="projectStatus">Status</span></span>
+                        </div>
+                        <h3>Descrição</h3>
+                        <p id="projectDescription">Descrição detalhada do projeto...</p>
+                        
+                        <h3>Objetivos</h3>
+                        <ul id="projectObjectives">
+                            <li>Objetivo 1</li>
+                            <li>Objetivo 2</li>
+                            <li>Objetivo 3</li>
+                        </ul>
+                        
+                        <h3>Resultados</h3>
+                        <p id="projectResults">Resultados do projeto...</p>
+                        
+                        <div class="project-modal-gallery">
+                            <h3>Galeria</h3>
+                            <div id="projectGallery" class="modal-gallery-grid">
+                                <!-- Gallery images will be added dynamically -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
