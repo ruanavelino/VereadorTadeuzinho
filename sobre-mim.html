@@ -2,7 +2,8 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Sobre Mim - Vereador Tadeuzinho - Gravatá</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -14,7 +15,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header class="fade-in">
         <div class="container">
             <div class="logo">
                 <a href="index.html">
@@ -31,7 +32,7 @@
                         <li><a href="sobre-mim.html" class="active">SOBRE</a></li>
                         <li><a href="projetos.html">PROJETOS</a></li>
                         <li><a href="galeria.html">GALERIA</a></li>
-                        <li><a href="index.html#contato">CONTATO</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>
                     </ul>
                 </nav>
             </div>
@@ -44,12 +45,11 @@
     </header>
 
     <!-- Biography Hero Section -->
-    <section class="bio-hero">
-        <div class="overlay"></div>
+    <section class="bio-hero fade-in">
         <div class="container">
             <div class="bio-hero-content">
                 <div class="bio-hero-image fade-in">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Vereador Tadeuzinho">
+                    <img src="assets/images/tadeuzinho.jpg" alt="Vereador Tadeuzinho">
                 </div>
                 <div class="bio-hero-text fade-in">
                     <h1>Tadeuzinho <span>da Silva</span></h1>
@@ -79,63 +79,11 @@
     </section>
 
     <!-- My Story Section -->
-    <section class="my-story">
+    <section class="my-story fade-in">
         <div class="container">
             <h2 class="section-title">Minha História</h2>
             <div class="story-content fade-in">
                 <p class="story-intro">Nascido em Gravatá, nordestino de coração, sempre tive um grande amor pela minha cidade e sua gente. Desde jovem, me interessei por questões sociais e pelo desejo de contribuir para o desenvolvimento da nossa comunidade.</p>
-                
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-icon">
-                            <i class="fas fa-baby"></i>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>1985</h3>
-                            <p>Nascimento em Gravatá, no bairro do Centro.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-icon">
-                            <i class="fas fa-school"></i>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>2003</h3>
-                            <p>Formatura no Ensino Médio e início da faculdade de Administração Pública.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-icon">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>2008</h3>
-                            <p>Início da carreira pública como assessor na Prefeitura de Gravatá.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-icon">
-                            <i class="fas fa-hands-helping"></i>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>2015</h3>
-                            <p>Fundação da ONG "Gravatá para Todos" focada em projetos sociais e educacionais.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-icon">
-                            <i class="fas fa-vote-yea"></i>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>2020</h3>
-                            <p>Eleição como vereador de Gravatá com 3.245 votos.</p>
-                        </div>
-                    </div>
-                </div>
                 
                 <div class="story-quote">
                     <blockquote>
@@ -148,7 +96,7 @@
     </section>
 
     <!-- Achievements Section -->
-    <section class="achievements">
+    <section class="achievements-section fade-in">
         <div class="container">
             <h2 class="section-title">Conquistas e Resultados</h2>
             
@@ -231,7 +179,7 @@
     </section>
 
     <!-- Goals Section -->
-    <section class="goals">
+    <section class="goals fade-in">
         <div class="container">
             <h2 class="section-title">Metas para Gravatá</h2>
             
@@ -249,51 +197,47 @@
                         <p>Implementar programas de reforço escolar em todas as escolas municipais e estabelecer parcerias para cursos profissionalizantes.</p>
                         <div class="goal-progress">
                             <div class="progress-bar">
-                                <div class="progress-fill" style="width: 65%;"></div>
+                                <div class="progress-fill" data-progress="65%" style="width: 0%;"></div>
                             </div>
-                            <span>65% concluído</span>
                         </div>
                     </div>
                     
                     <div class="goal-card">
                         <div class="goal-icon">
-                            <i class="fas fa-heartbeat"></i>
+                            <i class="fas fa-heart"></i>
                         </div>
                         <h3>Saúde</h3>
-                        <p>Melhorar o atendimento nos postos de saúde e ampliar o programa de médico da família para todos os bairros.</p>
+                        <p>Ampliar a cobertura de atendimento médico e melhorar a infraestrutura dos postos de saúde.</p>
                         <div class="goal-progress">
                             <div class="progress-bar">
-                                <div class="progress-fill" style="width: 40%;"></div>
+                                <div class="progress-fill" data-progress="45%" style="width: 0%;"></div>
                             </div>
-                            <span>40% concluído</span>
                         </div>
                     </div>
                     
                     <div class="goal-card">
                         <div class="goal-icon">
-                            <i class="fas fa-road"></i>
+                            <i class="fas fa-paw"></i>
                         </div>
-                        <h3>Infraestrutura</h3>
-                        <p>Pavimentar todas as ruas principais dos bairros e garantir saneamento básico para 100% da população urbana.</p>
+                        <h3>Proteção aos Animais</h3>
+                        <p>Implementar programas de castração e conscientização sobre o bem-estar animal.</p>
                         <div class="goal-progress">
                             <div class="progress-bar">
-                                <div class="progress-fill" style="width: 55%;"></div>
+                                <div class="progress-fill" data-progress="30%" style="width: 0%;"></div>
                             </div>
-                            <span>55% concluído</span>
                         </div>
                     </div>
                     
                     <div class="goal-card">
                         <div class="goal-icon">
-                            <i class="fas fa-tree"></i>
+                            <i class="fas fa-futbol"></i>
                         </div>
-                        <h3>Meio Ambiente</h3>
-                        <p>Implementar coleta seletiva em toda a cidade e desenvolver projetos de preservação das áreas verdes.</p>
+                        <h3>Esportes</h3>
+                        <p>Fomentar a prática esportiva e criar espaços adequados para atividades físicas.</p>
                         <div class="goal-progress">
                             <div class="progress-bar">
-                                <div class="progress-fill" style="width: 35%;"></div>
+                                <div class="progress-fill" data-progress="55%" style="width: 0%;"></div>
                             </div>
-                            <span>35% concluído</span>
                         </div>
                     </div>
                 </div>
@@ -302,65 +246,117 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials">
+    <section class="testimonials fade-in">
         <div class="container">
             <h2 class="section-title">O que Dizem Sobre Mim</h2>
             
-            <div class="testimonials-slider fade-in">
-                <div class="testimonial-item">
-                    <div class="testimonial-content">
-                        <p>"O vereador Tadeuzinho sempre esteve presente em nosso bairro, ouvindo nossas demandas e buscando soluções. Graças a ele, conseguimos a reforma da nossa praça e a melhoria na iluminação pública."</p>
+            <div class="testimonial-container">
+                <div class="testimonial-grid">
+                    <div class="testimonial-card fade-in">
+                        <div class="testimonial-header">
+                            <div class="testimonial-image">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="João Silva">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>João Silva</h4>
+                                <p>Morador</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-text">
+                            "O vereador Tadeuzinho sempre esteve presente em nosso bairro, ouvindo nossas demandas e buscando soluções. Graças a ele, conseguimos a reforma da nossa praça e a melhoria na iluminação pública."
+                        </div>
+                        <div class="testimonial-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bairro São Miguel</span>
+                        </div>
                     </div>
-                    <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="João Silva">
-                        <div>
-                            <h4>João Silva</h4>
-                            <p>Morador do Bairro São Miguel</p>
+                    
+                    <div class="testimonial-card fade-in">
+                        <div class="testimonial-header">
+                            <div class="testimonial-image">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Maria Oliveira">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Maria Oliveira</h4>
+                                <p>Professora</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-text">
+                            "Como professora, aprovo totalmente o trabalho do vereador Tadeuzinho na área da educação. Seu projeto de biblioteca comunitária transformou a realidade de muitos alunos que não tinham acesso a livros."
+                        </div>
+                        <div class="testimonial-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Rede Municipal de Ensino</span>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card fade-in">
+                        <div class="testimonial-header">
+                            <div class="testimonial-image">
+                                <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Carlos Santos">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Carlos Santos</h4>
+                                <p>Empresário</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-text">
+                            "Tenho acompanhado o trabalho do vereador Tadeuzinho desde sua eleição e posso afirmar que ele cumpre o que promete. Sua dedicação aos projetos de infraestrutura melhorou significativamente nossa cidade."
+                        </div>
+                        <div class="testimonial-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Centro Comercial</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="testimonial-item">
-                    <div class="testimonial-content">
-                        <p>"Como professora, aprovo totalmente o trabalho do vereador Tadeuzinho na área da educação. Seu projeto de biblioteca comunitária transformou a realidade de muitos alunos que não tinham acesso a livros."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Maria Oliveira">
-                        <div>
-                            <h4>Maria Oliveira</h4>
-                            <p>Professora da Rede Municipal</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-item">
-                    <div class="testimonial-content">
-                        <p>"Tenho acompanhado o trabalho do vereador Tadeuzinho desde sua eleição e posso afirmar que ele cumpre o que promete. Sua dedicação aos projetos de infraestrutura melhorou significativamente nossa cidade."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Carlos Santos">
-                        <div>
-                            <h4>Carlos Santos</h4>
-                            <p>Empresário local</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="testimonials-nav">
-                <button id="testimonialPrev"><i class="fas fa-chevron-left"></i></button>
-                <button id="testimonialNext"><i class="fas fa-chevron-right"></i></button>
             </div>
         </div>
     </section>
 
     <!-- Contact CTA -->
-    <section class="contact-cta">
+    <section class="contact-cta fade-in">
         <div class="container">
-            <div class="cta-content fade-in">
-                <h2>Vamos Conversar?</h2>
-                <p>Estou sempre disponível para ouvir suas ideias, sugestões e necessidades. Entre em contato comigo e vamos trabalhar juntos para melhorar nossa cidade.</p>
-                <a href="index.html#contato" class="btn btn-primary">Fale Comigo</a>
+            <div class="cta-grid">
+                <div class="cta-content fade-in">
+                    <h2>Vamos Conversar?</h2>
+                    <p>Estou sempre disponível para ouvir suas ideias, sugestões e necessidades. Entre em contato comigo e vamos trabalhar juntos para melhorar nossa cidade.</p>
+                    <div class="cta-contact-info">
+                        <div class="cta-contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(81) 99999-9999</span>
+                        </div>
+                        <div class="cta-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contato@tadeuzinho.com.br</span>
+                        </div>
+                        <div class="cta-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Câmara Municipal de Gravatá - PE</span>
+                        </div>
+                    </div>
+                    <a href="contato.html" class="btn btn-primary">Fale Comigo</a>
+                </div>
+                <div class="cta-social">
+                    <h3>Siga nas Redes Sociais</h3>
+                    <div class="cta-social-grid">
+                        <a href="#" class="cta-social-item">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" class="cta-social-item">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#" class="cta-social-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="#" class="cta-social-item">
+                            <i class="fab fa-youtube"></i>
+                            <span>YouTube</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -377,7 +373,7 @@
                         <li><a href="sobre-mim.html">Sobre</a></li>
                         <li><a href="projetos.html">Projetos</a></li>
                         <li><a href="galeria.html">Galeria</a></li>
-                        <li><a href="index.html#contato">Contato</a></li>
+                        <li><a href="contato.html">Contato</a></li>
                     </ul>
                 </div>
                 <div class="social-links">
@@ -396,20 +392,23 @@
     <script>
         // Initialize Charts
         document.addEventListener('DOMContentLoaded', function() {
+            // Configuração responsiva para os gráficos
+            Chart.defaults.responsive = true;
+            Chart.defaults.maintainAspectRatio = false;
+            
             // Areas Chart
             const areasCtx = document.getElementById('areasChart').getContext('2d');
             const areasChart = new Chart(areasCtx, {
                 type: 'doughnut',
                 data: {
-                    labels: ['Educação', 'Saúde', 'Infraestrutura', 'Meio Ambiente', 'Segurança'],
+                    labels: ['Educação', 'Saúde', 'Proteção aos Animais', 'Esportes'],
                     datasets: [{
-                        data: [30, 25, 20, 15, 10],
+                        data: [30, 25, 20, 15],
                         backgroundColor: [
                             '#12C8C8',
                             '#F37520',
                             '#7E57C2',
-                            '#4CAF50',
-                            '#FFC107'
+                            '#4CAF50'
                         ],
                         borderWidth: 0
                     }]
@@ -423,7 +422,9 @@
                             labels: {
                                 font: {
                                     family: "'Roboto', sans-serif",
-                                    size: 14
+                                    size: function() {
+                                        return window.innerWidth < 768 ? 12 : 14;
+                                    }
                                 },
                                 padding: 20
                             }
@@ -461,6 +462,20 @@
                             ticks: {
                                 callback: function(value) {
                                     return value + '%';
+                                },
+                                font: {
+                                    size: function() {
+                                        return window.innerWidth < 768 ? 10 : 12;
+                                    }
+                                }
+                            }
+                        },
+                        x: {
+                            ticks: {
+                                font: {
+                                    size: function() {
+                                        return window.innerWidth < 768 ? 10 : 12;
+                                    }
                                 }
                             }
                         }
@@ -480,28 +495,87 @@
                 }
             });
             
-            // Testimonials Slider
-            let currentTestimonial = 0;
-            const testimonialItems = document.querySelectorAll('.testimonial-item');
-            const totalTestimonials = testimonialItems.length;
+            // Animação das barras de progresso
+            const animateProgressBars = () => {
+                const progressBars = document.querySelectorAll('.progress-fill');
+                progressBars.forEach(bar => {
+                    const targetWidth = bar.getAttribute('data-progress');
+                    bar.style.width = '0%';
+                    
+                    setTimeout(() => {
+                        bar.style.transition = 'width 1.5s ease-in-out';
+                        bar.style.width = targetWidth;
+                    }, 300);
+                });
+            };
             
-            // Hide all testimonials except the first one
-            for(let i = 1; i < totalTestimonials; i++) {
-                testimonialItems[i].style.display = 'none';
+            // Observer para iniciar animação quando as barras entrarem na tela
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateProgressBars();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.2 });
+            
+            const goalsSection = document.querySelector('.goals-grid');
+            if (goalsSection) {
+                observer.observe(goalsSection);
             }
             
-            // Next testimonial
-            document.getElementById('testimonialNext').addEventListener('click', function() {
-                testimonialItems[currentTestimonial].style.display = 'none';
-                currentTestimonial = (currentTestimonial + 1) % totalTestimonials;
-                testimonialItems[currentTestimonial].style.display = 'block';
+            // Função para atualizar o valor percentual junto com a barra
+            const updateProgressValues = () => {
+                const progressBars = document.querySelectorAll('.goal-card');
+                
+                progressBars.forEach(card => {
+                    const bar = card.querySelector('.progress-fill');
+                    const percentage = bar.getAttribute('data-progress');
+                    const percentageDisplay = document.createElement('div');
+                    percentageDisplay.className = 'progress-percentage';
+                    percentageDisplay.textContent = percentage;
+                    
+                    // Adiciona o elemento de exibição se ainda não existir
+                    if (!card.querySelector('.progress-percentage')) {
+                        card.querySelector('.goal-progress').appendChild(percentageDisplay);
+                    }
+                });
+            };
+            
+            // Inicializa os valores percentuais
+            updateProgressValues();
+            
+            // Redimensionamento responsivo
+            window.addEventListener('resize', function() {
+                // Atualiza os gráficos quando a janela é redimensionada
+                areasChart.resize();
+                attendanceChart.resize();
             });
             
-            // Previous testimonial
-            document.getElementById('testimonialPrev').addEventListener('click', function() {
-                testimonialItems[currentTestimonial].style.display = 'none';
-                currentTestimonial = (currentTestimonial - 1 + totalTestimonials) % totalTestimonials;
-                testimonialItems[currentTestimonial].style.display = 'block';
+            // Melhorar compatibilidade em dispositivos móveis
+            document.querySelectorAll('.chart-canvas-container').forEach(container => {
+                container.style.minHeight = window.innerWidth < 480 ? '200px' : '300px';
+            });
+            
+            // Ajuste para nav mobile
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const headerCenter = document.querySelector('.header-center');
+            
+            if(mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    headerCenter.classList.toggle('active');
+                    document.body.classList.toggle('menu-open');
+                });
+            }
+            
+            // Fechar menu ao clicar em um link do menu mobile
+            document.querySelectorAll('.header-center nav a').forEach(link => {
+                link.addEventListener('click', function() {
+                    if(window.innerWidth <= 992) {
+                        headerCenter.classList.remove('active');
+                        document.body.classList.remove('menu-open');
+                    }
+                });
             });
         });
     </script>

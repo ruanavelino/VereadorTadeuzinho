@@ -1,5 +1,8 @@
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
+    // Apply initial fade-in for all pages
+    applyInitialFadeIn();
+
     // Mobile Menu Toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const headerCenter = document.querySelector('.header-center');
@@ -591,4 +594,76 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize project modal functionality
     initProjectModal();
+
+    // Timeline Animation
+    function initTimeline() {
+        const timelineItems = document.querySelectorAll('.timeline-item');
+        
+        function checkTimelineItems() {
+            timelineItems.forEach(item => {
+                const itemTop = item.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (itemTop < windowHeight * 0.8) {
+                    item.classList.add('visible');
+                }
+            });
+        }
+        
+        // Check items on load
+        checkTimelineItems();
+        
+        // Check items on scroll
+        window.addEventListener('scroll', checkTimelineItems);
+    }
+
+    // Initialize timeline if on sobre.html page
+    if (document.querySelector('.timeline')) {
+        initTimeline();
+    }
+
+    // Function to apply fade-in effect on page load for all pages
+    function applyInitialFadeIn() {
+        const header = document.querySelector('header');
+        const mainSections = document.querySelectorAll('section');
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        // Add fade-in class to header if it doesn't have it already
+        if (header && !header.classList.contains('fade-in')) {
+            header.classList.add('fade-in');
+            setTimeout(() => {
+                header.classList.add('visible');
+            }, 100);
+        }
+        
+        // Add fade-in to main sections if they don't have it
+        if (mainSections.length > 0) {
+            mainSections.forEach((section, index) => {
+                // Only add class if it doesn't already have it
+                if (!section.classList.contains('fade-in')) {
+                    section.classList.add('fade-in');
+                }
+                
+                // Stagger the animations
+                setTimeout(() => {
+                    section.classList.add('visible');
+                }, 300 + (index * 150));
+            });
+        }
+        
+        // Apply visible class to all fade-in elements that are in the initial viewport
+        if (fadeElements.length > 0) {
+            fadeElements.forEach((element, index) => {
+                const rect = element.getBoundingClientRect();
+                const isInInitialViewport = rect.top <= window.innerHeight;
+                
+                if (isInInitialViewport) {
+                    // Stagger animations for elements in the initial viewport
+                    setTimeout(() => {
+                        element.classList.add('visible');
+                    }, 300 + (index % 5) * 100);
+                }
+            });
+        }
+    }
 }); 
